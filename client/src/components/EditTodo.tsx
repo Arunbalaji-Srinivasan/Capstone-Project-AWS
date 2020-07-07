@@ -73,7 +73,7 @@ export class EditTodo extends React.PureComponent<
   render() {
     return (
       <div>
-        <h1>Upload new image</h1>
+        <h1>Upload new post</h1>
 
         <Form onSubmit={this.handleSubmit}>
           <Form.Field>
@@ -81,7 +81,7 @@ export class EditTodo extends React.PureComponent<
             <input
               type="file"
               accept="image/*"
-              placeholder="Image to upload"
+              placeholder="New Post"
               onChange={this.handleFileChange}
             />
           </Form.Field>
@@ -102,7 +102,7 @@ export class EditTodo extends React.PureComponent<
           loading={this.state.uploadState !== UploadState.NoUpload}
           type="submit"
         >
-          Upload
+          Post
         </Button>
       </div>
     )
